@@ -1,15 +1,21 @@
 console.log('linked');
 
 class Trainer {
-  constructor(pikachu, eevee, mewtwo) {
-    this.pokemon = pikachu;
-    this.pokemon = eevee;
-    this.pokemon = mewtwo;
-  }
+  constructor() {
+    this.pokemon = [];
+ }
+  addPoke(pokemon){
+   this.pokemon.push(pokemon);
+ }
+  all(){
+   return this.pokemon;
+ }
+ get(name){
+   for (let i = 0; i < this.pokemon.length; i++) {
+       console.log(this.pokemon[i]);
+   }
+ }
 }
-
-
-
 
 
 
@@ -25,6 +31,8 @@ class Pokemon {
   }
 }
 
+let Joseph = new Trainer();
+
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -32,7 +40,7 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
 
       var myObj = JSON.parse(this.responseText);
-      var pikachu = new Pokemon (
+      pikachu = new Pokemon (
         this.name = myObj.name,
         this.hp = myObj.stats[5].base_stat,
         this.attack = myObj.stats[4].base_stat,
@@ -62,7 +70,7 @@ function loadPokemon() {
       var myObj = JSON.parse(this.responseText);
       document.getElementById('info').src = myObj.sprites.front_default;
       console.log(this.responseText);
-    }
+    }yorvi
     };
     xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/25/", true);
     xhttp.send();

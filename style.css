@@ -83,7 +83,7 @@ p {
   color: #d5c8af;
   line-height: 20px;
 }
-.interface {
+.border {
   padding: 0;
   width: 100%;
   display: flex;
@@ -92,21 +92,21 @@ p {
   background-color: #1b1b1b;
 }
 
-.interface a {
+.border a {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.interface img {
+.border img {
   width: 120px;
   height: 120px;
 }
 
-.interface div {
+.border div {
   width: 220px;
 }
 
-.interface a:hover div {
+.border a:hover div {
   background-color: #3c1d3d;
 }
 
