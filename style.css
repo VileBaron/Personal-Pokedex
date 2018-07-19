@@ -1,0 +1,140 @@
+body {
+  background-color: #1b1b1b;
+}
+
+
+.main-title {
+   position: relative;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+
+img {
+  width: 160px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 100px;
+    color: #f8b700;
+  }
+
+}
+
+h2 {
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+  color: #f8b700;
+}
+
+h3 {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+  color: #f8b700;
+  padding: 12px 0 4px;
+}
+h4 {
+  font-family: 'Acme', sans-serif;
+  font-size: 18px;
+  color: #f8b700;
+  padding: 25px 0 4px;
+}
+
+h5 {
+  font-family: 'Acme', sans-serif;
+  font-size: 25px;
+  color: #f8b700;
+  padding: 30px 0 4px;
+}
+
+p {
+  font-family: arial;
+  font-size: 12px;
+  color: #d5c8af;
+  line-height: 20px;
+}
+.interface {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b1b1b;
+}
+
+.interface a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.interface img {
+  width: 120px;
+  height: 120px;
+}
+
+.interface div {
+  width: 220px;
+}
+
+.interface a:hover div {
+  background-color: #3c1d3d;
+}
+
+/* Sidebar section
+================================= */
+.sideright {
+background-color: #e5e4d7;
+margin: 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+width: 260px;
+float: right;
+}
+
+.imagesidebar {
+  width: 300px;
+  float: right;
+  border-radius: 5px;
+  margin-left: 10px; margin-right: 10px;
+  margin-top: 0px; margin-bottom: 10px;
+  clear: right;
+  opacity: 1.0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imagesidebar:hover {
+  opacity: 0.4;
+}
+.imagesidebar:hover {
+  opacity: 0.4;

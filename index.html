@@ -7,6 +7,77 @@
 </head>
 <body>
 
-  <script>main.js</script>
+  <div class="container demo">
+   <div class="content">
+      <div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas>
+         <h1 class="main-title"><span class="thin">Joseph's</span> Pokedex</h1>
+      </div>
+   </div>
+</div>
+
+<div class="writtenheader">
+  <h2>Choose your character!</h2>
+  <p>Will you choose wisely or will you choose poorly?</p>
+</div>
+
+<div class="interface">
+  <!-- <a href="#" onclick="loadDoc()"> -->
+    <img src="images/pikachu.jpg" alt="pikachu">
+    <div>
+      <h3><a href="pikachu.html">Pikachu</a></h3>
+      <p>Pikachus have harder time being caught, because of their speed. However, their weakness is ground attacks.</p>
+    </div>
+  </a>
+  <a href="#" onclick="GameManager.setGameStart('Rogue')">
+    <img src="images/eevee.png" alt="eevee">
+    <div>
+      <h3><a href="eevee.html">Eevee</a></h3>
+      <p>Eevees are very fast and and difficult to catch which makes up for their low health.</p>
+    </div>
+  </a>
+  <a href="#" onclick="GameManager.setGameStart('Mewtwo')">
+    <img src="images/mewtwo.jpg" alt="mewtwo">
+    <div>
+      <h3><a href="mewtwo.html">Mewtwo</a></h3>
+      <p>Mewtwos are regarded as one of the strongest Pokemon. Players need to be cunning to beat Mewtwo. </p>
+    </div>
+  </a>
+  <a href="#" onclick="GameManager.setGameStart('Kabutops')">
+    <img src="images/kabutops.jpg" alt="kabutops">
+    <div>
+      <h3><h3><a href="kabatops.html">Kabatops</a></h3> </h3>
+      <p>Kabutops have a lot of very fast moves and it never give up attitude.</p>
+    </div>
+  </a>
+  <a href="#" onclick="GameManager.setGameStart('Seaking')">
+    <img src="images/seaking.jpg" alt="seaking">
+    <div>
+      <h3><h3><a href="seaking.html">Seaking</a></h3> </h3>
+      <p>Seakings are sea creatures which are much stronger and larger than the normal ones.  Once there out of water, there done for!</p>
+    </div>
+  </a>
+  <a href="#" onclick="GameManager.setGameStart('Charmander')">
+    <img src="images/charmander.png" alt="charmander">
+    <div>
+      <h3><h3><a href="charmander.html">Charmander</a></h3> </h3>
+      <p>Charmanders have a huge temper and can get very hot if you bother them.</p>
+    </div>
+  </a>
+</div>
+
+<div class="actions">
+
+</div>
+
+<div class="arena">
+
+</div>
+
+<div class="enemy">
+
+</div>
+<script src="gameManager.js"></script>
 </body>
+
 </html>
