@@ -10,7 +10,7 @@ $flex: flex;
 $-wrap: nowrap;
 $none: none;
 $wrap: wrap;
-$col: column
+$col: column;
 $rel: relative;
 $ash: #F9F1E9;
 $rt: right;
@@ -23,32 +23,25 @@ $HOpacity: 0.5s;
 $mWidth: 220px;
 $hWidth: 300px;
 $ease: ease-in-out;
-$red: #990000
-$maroon: #211510
-$1px: 10px;
-$2px: 20px;
-$3px: 30px;
-$16: 16px;
-$25: 25px;
-$4: 4px;
-$18: 18px;
-$12: 12px;
-$22: 22px;
-$22px: 22px;
+$red: #990000;
+$maroon: #211510;
+$ten: 10px;
+$twe: 20px;
+$thi: 30px;
+$sixtn: 16px;
+$twfv: 25px;
+$four: 4px;
+$ateteen: 18px;
+$twelve: 12px;
+$twotwo: 22px;
 $run: run-in;
-$200: 200;
-$160: 160px;
-$-5: 5px;
-$260: 260px;
-$105: 105;
-$blood: #990000;
-$lime: #8db600;
-$scarlet: #801818;
-$offwt: #b2beb5;
-$bkwt: #e5e4d7;
-$pt: #d5c8af;
-$4em: 4.2em;
-$1em: 0.1em;
+$twohd: 200;
+$onesixtn: 160px;
+$-five: 5px;
+$twosty: 260px;
+$onefive: 105;
+$fourem: 4.2em;
+$lem: 0.1em;
 
 
 /* Body
@@ -90,19 +83,19 @@ body {
 
 .demo .main-title {
    text-transform: $Ucase;
-   font-size: $4em;
-   letter-spacing: $1em;
+   font-size: $fourem;
+   letter-spacing: $lem;
 }
 
 .main-title .thin {
-   font-weight: $200;
+   font-weight: $twohd;
 }
 
 /* Images
 ================================= */
 
 img {
-  width: $160;
+  width: $sixtn0;
 }
 
 
@@ -122,55 +115,55 @@ h1 {
 
 h2 {
   font-family: $font;
-  font-size: $3px;
+  font-size: $thi;
   color: $brand-color;
 }
 
 h3 {
   font-family: $font;
-  font-size: $22;
+  font-size: $twotwo;
   color: $blood;
-  padding: $12 $zero $4;
+  padding: $twelve $zero $four;
 }
 h4 {
   font-family: $font;
-  font-size: $18;
+  font-size: $ateteen;
   color: $lime;
-  padding: $25 $zero $4;
+  padding: $twfv $zero $four;
 }
 
 h5 {
   font-family: $font;
-  font-size: $25;
+  font-size: $twfv;
   color: $brand-color;
-  padding: $3px $zero $4;
+  padding: $thi $zero $four;
 }
 
 h6 {
   font-family: $font;
-  font-size: $25;
+  font-size: $twfv;
   color: $brand-color;
 }
 
 p {
   font-family: $Aft
-  font-size: $2px;
+  font-size: $twe;
   color: $pt;
-  line-height: $2px;
+  line-height: $twe;
 }
 
 p1 {
   font-family: $Aft
-  font-size: $2px;
+  font-size: $twe;
   color: $offwt;
-  line-height: $2px;
+  line-height: $twe;
 }
 
 p2 {
   font-family: $Aft
-  font-size: $2px;
+  font-size: $twe;
   color: $scarlet;
-  line-height: $2px;
+  line-height: $twe;
 }
 
 /* Button
@@ -179,10 +172,10 @@ button {
 font-family: : $font;
 background-color: $brand-color;
  color: $offwt;
- padding: $1px $1px;
+ padding: $ten $ten;
  text-align: $center;
  display: $run;
- font-size: $16;
+ font-size: $sixtn;
 }
 
 /* Borders
@@ -210,7 +203,7 @@ background-color: $brand-color;
 
 .container-grid div {
   width: $mWidth;
-  padding: zero $1px zero $2px;
+  padding: zero $ten zero $twe;
   background-color: $maroon;
 }
 
@@ -222,20 +215,20 @@ background-color: $brand-color;
 ================================= */
 .sideright {
 background-color: $bkwt;
-margin: $1px;
-border-radius: $-5px;
-padding: $2px;
-font-size: $105%;
-width: $260;
+margin: $ten;
+border-radius: $-five;
+padding: $twe;
+font-size: $onefive;
+width: $twosty;
 float: $rt;
 }
 
 .imagesidebar {
   width: $hWidth;
   float: $rt;
-  border-radius: $-5px;
-  margin-left: $1px; margin-right: $1px;
-  margin-top: $zero; margin-bottom: $1px;
+  border-radius: $-five;
+  margin-left: $ten; margin-right: $ten;
+  margin-top: $zero; margin-bottom: $ten;
   clear: $rt;
   opacity: $lOpacity;
   transition: opacity $HOpacity $ease;

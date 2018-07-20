@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "$": expected identifier, was "1px: 10px;"
+        on line 28 of sassy.scss
+
+23: $mWidth: 220px;
+24: $hWidth: 300px;
+25: $ease: ease-in-out;
+26: $red: #990000;
+27: $maroon: #211510;
+28: $1px: 10px;
+29: $2px: 20px;
+30: $3px: 30px;
+31: $16: 16px;
+32: $25: 25px;
+33: $4: 4px;
+
+Backtrace:
+sassy.scss:28
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:639:in `variable'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/sass:13:in `<top (required)>'
+/Users/josephworman/.rbenv/versions/2.5.1/bin/sass:23:in `load'
+/Users/josephworman/.rbenv/versions/2.5.1/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$\": expected identifier, was \"1px: 10px;\"\A         on line 28 of sassy.scss\A \A 23: $mWidth: 220px;\A 24: $hWidth: 300px;\A 25: $ease: ease-in-out;\A 26: $red: #990000;\A 27: $maroon: #211510;\A 28: $1px: 10px;\A 29: $2px: 20px;\A 30: $3px: 30px;\A 31: $16: 16px;\A 32: $25: 25px;\A 33: $4: 4px;"; }
