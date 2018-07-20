@@ -167,12 +167,12 @@ button {
 ================================= */
 .sideLeft {
   display: grid;
-  /* grid-template-columns: auto auto auto; */
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-  /* grid-template-rows: 100px 100px 100px 100px 100px 100px;  */
   grid-auto-rows: 100px;
-  float: left; }
+  float: left;
+  width: 700px;
+  height: 700px; }
 
 .section1 {
   grid-column: 1;
@@ -180,28 +180,31 @@ button {
   background-color: blue;
   color: white;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  width: 700px;
+  height: 200px; }
 
 .section2 {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 3;
   background-color: darkgreen;
   color: white;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  width: 700px;
+  height: 400px;
+  background: url("images/tv.jpeg");
+  background-size: cover; }
+
+.section2 img {
+  width: 96%;
+  height: 90%;
+  padding-top: 16px; }
 
 .section3 {
-  grid-column: 3;
-  grid-row: 1;
-  background-color: brown;
-  color: white;
-  text-align: center;
-  font-size: 20px; }
-
-.section4 {
   grid-column: 1;
-  grid-row: 2;
-  background-color: red;
+  grid-row: 7;
+  background-color: brown;
   color: white;
   text-align: center;
   font-size: 20px; }
