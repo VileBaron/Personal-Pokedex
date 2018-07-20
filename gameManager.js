@@ -220,3 +220,6 @@ function loadPokemon() {
           xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
           xhttp.send();
         }
+
+
+document.images['images/tv.jpeg'].style.visibility = hidden;
