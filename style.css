@@ -163,4 +163,47 @@ button {
 .imagesidebar:hover {
   opacity: 0.4; }
 
+/* Side Left
+================================= */
+.sideLeft {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  /* grid-template-rows: 100px 100px 100px 100px 100px 100px;  */
+  grid-auto-rows: 100px;
+  float: left; }
+
+.section1 {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 20px; }
+
+.section2 {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  font-size: 20px; }
+
+.section3 {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  font-size: 20px; }
+
+.section4 {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px; }
+
 /*# sourceMappingURL=style.css.map */
