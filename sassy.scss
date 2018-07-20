@@ -26,7 +26,7 @@ $ease: ease-in-out;
 $red: #990000;
 $maroon: #211510;
 $ten: 10px;
-$twe: 20px;
+$twy: 20px;
 $thi: 30px;
 $sixtn: 16px;
 $twfv: 25px;
@@ -146,24 +146,24 @@ h6 {
 }
 
 p {
-  font-family: $Aft
-  font-size: $twe;
+  font-family: $Aft;
+  font-size:  $twy;
   color: $pt;
-  line-height: $twe;
+  line-height:  $twy;
 }
 
 p1 {
-  font-family: $Aft
-  font-size: $twe;
+  font-family: $Aft;
+  font-size:  $twy;
   color: $offwt;
-  line-height: $twe;
+  line-height:  $twy;
 }
 
 p2 {
-  font-family: $Aft
-  font-size: $twe;
+  font-family: $Aft;
+  font-size:  $twy;
   color: $scarlet;
-  line-height: $twe;
+  line-height:  $twy;
 }
 
 /* Button
@@ -203,7 +203,7 @@ background-color: $brand-color;
 
 .container-grid div {
   width: $mWidth;
-  padding: zero $ten zero $twe;
+  padding: zero $ten zero  $twy;
   background-color: $maroon;
 }
 
@@ -217,7 +217,7 @@ background-color: $brand-color;
 background-color: $bkwt;
 margin: $ten;
 border-radius: $-five;
-padding: $twe;
+padding:  $twy;
 font-size: $onefive;
 width: $twosty;
 float: $rt;

@@ -1,25 +1,35 @@
 /*
-Error: Invalid CSS after "$": expected identifier, was "1px: 10px;"
-        on line 28 of sassy.scss
+Error: Invalid CSS after "font-family: ": expected expression (e.g. 1px, bold), was ": $font;"
+        on line 172 of sassy.scss
 
-23: $mWidth: 220px;
-24: $hWidth: 300px;
-25: $ease: ease-in-out;
-26: $red: #990000;
-27: $maroon: #211510;
-28: $1px: 10px;
-29: $2px: 20px;
-30: $3px: 30px;
-31: $16: 16px;
-32: $25: 25px;
-33: $4: 4px;
+167: }
+168:
+169: /* Button
+170: ================================= *\/
+171: button {
+172: font-family: : $font;
+173: background-color: $brand-color;
+174:  color: $offwt;
+175:  padding: $ten $ten;
+176:  text-align: $center;
+177:  display: $run;
 
 Backtrace:
-sassy.scss:28
+sassy.scss:172
 /Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:639:in `variable'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:724:in `assert_expr'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:68:in `parse'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:988:in `value!'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1254:in `rethrow'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:809:in `try_declaration'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
 /Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
 /Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
 /Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
@@ -38,4 +48,4 @@ sassy.scss:28
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$\": expected identifier, was \"1px: 10px;\"\A         on line 28 of sassy.scss\A \A 23: $mWidth: 220px;\A 24: $hWidth: 300px;\A 25: $ease: ease-in-out;\A 26: $red: #990000;\A 27: $maroon: #211510;\A 28: $1px: 10px;\A 29: $2px: 20px;\A 30: $3px: 30px;\A 31: $16: 16px;\A 32: $25: 25px;\A 33: $4: 4px;"; }
+  content: "Error: Invalid CSS after \"font-family: \": expected expression (e.g. 1px, bold), was \": $font;\"\A         on line 172 of sassy.scss\A \A 167: }\A 168: \A 169: /* Button\A 170: ================================= */\A 171: button {\A 172: font-family: : $font;\A 173: background-color: $brand-color;\A 174:  color: $offwt;\A 175:  padding: $ten $ten;\A 176:  text-align: $center;\A 177:  display: $run;"; }
