@@ -1,8 +1,7 @@
 /* Body
 ================================= */
 body {
-  background-color: #1b1b1b;
-}
+  background-color: #1b1b1b; }
 
 .header {
   background-color: #1b1b1b;
@@ -11,126 +10,106 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none; }
 
 /* Title
 ================================= */
-
 .main-title {
-   position: relative;
-   margin: 0;
-   padding: 0;
-   color: #F9F1E9;
-   text-align: center;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  color: #F9F1E9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  transform: translate3d(-50%, -50%, 0); }
 
 .demo .main-title {
-   text-transform: uppercase;
-   font-size: 4.2em;
-   letter-spacing: 0.1em;
-}
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em; }
 
 .main-title .thin {
-   font-weight: 200;
-}
+  font-weight: 200; }
 
 /* Images
 ================================= */
-
 img {
-  width: 160px;
-}
-
+  width: 160px; }
 
 .container-grid img {
   width: 120px;
-  height: 120px;
-}
+  height: 120px; }
 
 /* Fonts
 ================================= */
-
 h1 {
-    font-family: 'Acme', sans-serif;
-    font-size: 100px;
-    color: #f8b700;
-  }
+  font-family: "Acme", sans-serif;
+  font-size: 100px;
+  color: #f8b700; }
 
 h2 {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 30px;
-  color: #f8b700;
-}
+  color: #f8b700; }
 
 h3 {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 22px;
   color: #990000;
-  padding: 12px 0 4px;
-}
+  padding: 12px 0 4px; }
+
 h4 {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 18px;
   color: #8db600;
-  padding: 25px 0 4px;
-}
+  padding: 25px 0px 4px; }
 
 h5 {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 25px;
   color: #f8b700;
-  padding: 30px 0 4px;
-}
+  padding: 30px 0 4px; }
 
 h6 {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 25px;
-  color: #f8b700;
-}
+  color: #f8b700; }
 
 p {
   font-family: arial;
   font-size: 20px;
   color: #d5c8af;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 p1 {
   font-family: arial;
   font-size: 20px;
   color: #b2beb5;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 p2 {
   font-family: arial;
   font-size: 20px;
   color: #801818;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 /* Button
 ================================= */
 button {
   background-color: #f8b700;
- color: #b2beb5;
- padding: 10px 10px;
- text-align: center;
- display: run-in;
- font-size: 16px;
- font: 'Acme', sans-serif;
-}
+  color: #b2beb5;
+  padding: 10px 10px;
+  text-align: center;
+  display: run-in;
+  font-size: 16px;
+  font: "Acme", sans-serif; }
 
 /* Borders
 ================================= */
@@ -140,53 +119,48 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #1b1b1b;
-}
+  background-color: #1b1b1b; }
 
 .container-grid a {
   display: flex;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap; }
 
 .container-grid img {
   width: 120px;
-  height: 120px;
-}
-
+  height: 120px; }
 
 .container-grid div {
   width: 220px;
   padding: 0 10px 0 20px;
-  background-color: #211510;
-}
+  background-color: #211510; }
 
 .container-grid a:hover div {
-  background-color: #990000;
-}
+  background-color: #990000; }
 
 /* Sidebar section
 ================================= */
 .sideright {
-background-color: #e5e4d7;
-margin: 10px;
-border-radius: 5px;
-padding: 20px;
-font-size: 105%;
-width: 260px;
-float: right;
-}
+  background-color: #e5e4d7;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 105%;
+  width: 260px;
+  float: right; }
 
 .imagesidebar {
   width: 300px;
   float: right;
   border-radius: 5px;
-  margin-left: 10px; margin-right: 10px;
-  margin-top: 0px; margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   clear: right;
-  opacity: 1.0;
-  transition: opacity 0.5s ease-in-out;
-}
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; }
 
 .imagesidebar:hover {
-  opacity: 0.4;
-}
+  opacity: 0.4; }
+
+/*# sourceMappingURL=style.css.map */

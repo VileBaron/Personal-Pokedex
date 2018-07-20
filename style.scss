@@ -23,7 +23,6 @@ $HOpacity: 0.5s;
 $mWidth: 220px;
 $hWidth: 300px;
 $ease: ease-in-out;
-$red: #990000;
 $maroon: #211510;
 $blood: #990000;
 $lime: #8db600;
@@ -33,21 +32,7 @@ $bkwt: #e5e4d7;
 $pt: #d5c8af;
 $ten: 10px;
 $twy: 20px;
-$thi: 30px;
-$sixtn: 16px;
-$twfv: 25px;
-$four: 4px;
-$ateteen: 18px;
-$twelve: 12px;
-$twotwo: 22px;
-$run: run-in;
-$twohd: 200;
-$onesixtn: 160px;
-$-five: 5px;
-$twosty: 260px;
-$onefive: 105;
-$fourem: 4.2em;
-$lem: 0.1em;
+
 
 
 /* Body
@@ -76,32 +61,32 @@ body {
 ================================= */
 
 .main-title {
-   position: $rel;
-   margin: $zero;
-   padding: $zero;
-   color: $ash;
-   text-align: $center;
-   top: $half;
-   left: $half;
-   -webkit-transform: translate3d($-half, $-half, $zero);
-   transform: translate3d($-half, $-half, $zero);
+  position: $rel;
+  margin: $zero;
+  padding: $zero;
+  color: $ash;
+  text-align: $center;
+  top: $half;
+  left: $half;
+  -webkit-transform: translate3d(-50%, -50%, $zero);
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .demo .main-title {
-   text-transform: $Ucase;
-   font-size: $fourem;
-   letter-spacing: $lem;
+  text-transform: $Ucase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
 }
 
 .main-title .thin {
-   font-weight: $twohd;
+  font-weight: 200;
 }
 
 /* Images
 ================================= */
 
 img {
-  width: $sixtn;
+  width: 160px;
 }
 
 
@@ -121,74 +106,74 @@ h1 {
 
 h2 {
   font-family: $font;
-  font-size: $thi;
+  font-size: 30px;
   color: $brand-color;
 }
 
 h3 {
   font-family: $font;
-  font-size: $twotwo;
-  color: $red;
-  padding: $twelve $zero $four;
+  font-size: 22px;
+  color: $blood;
+  padding: 12px 0 4px;
 }
 h4 {
   font-family: $font;
-  font-size: $ateteen;
-  color: #211510;
-  padding: $twfv $zero $four;
+  font-size: 18px;
+  color: $lime;
+  padding: 25px $zero 4px;
 }
 
 h5 {
   font-family: $font;
-  font-size: $twfv;
+  font-size: 25px;
   color: $brand-color;
-  padding: $thi $zero $four;
+  padding: 30px 0 4px;
 }
 
 h6 {
   font-family: $font;
-  font-size: $twfv;
+  font-size: 25px;
   color: $brand-color;
 }
 
 p {
   font-family: $Aft;
-  font-size:  $twy;
+  font-size: $twy;
   color: $pt;
-  line-height:  $twy;
+  line-height: $twy;
 }
 
 p1 {
   font-family: $Aft;
-  font-size:  $twy;
+  font-size: $twy;
   color: $offwt;
-  line-height:  $twy;
+  line-height: $twy;
 }
 
 p2 {
   font-family: $Aft;
-  font-size:  $twy;
+  font-size: $twy;
   color: $scarlet;
-  line-height:  $twy;
+  line-height: $twy;
 }
 
 /* Button
 ================================= */
 button {
-font-family: $font;
-background-color: $brand-color;
- color: $offwt;
- padding: $ten $ten;
- text-align: $center;
- display: $run;
- font-size: $sixtn;
+  background-color: $brand-color;
+  color: $offwt;
+  padding: $ten $ten;
+  text-align: $center;
+  display: run-in;
+  font-size: 16px;
+  font: $font;
 }
 
 /* Borders
 ================================= */
 .container-grid {
-  padding: $zero;
-  width: $main-fit;
+  padding: 0;
+  width: 100%;
   display: $flex;
   flex-wrap: $wrap;
   justify-content: $center;
@@ -197,9 +182,8 @@ background-color: $brand-color;
 
 .container-grid a {
   display: $flex;
-  flex-wrap: $-wrap
+  flex-wrap: $-wrap;
 }
-
 
 .container-grid img {
   width: $stanWiHi;
@@ -209,12 +193,12 @@ background-color: $brand-color;
 
 .container-grid div {
   width: $mWidth;
-  padding: zero $ten zero  $twy;
-  background-color: $maroon;
+  padding: 0 $ten 0 $twy;
+  background-color: #211510;
 }
 
 .container-grid a:hover div {
-  background-color: $red;
+  background-color: $blood;
 }
 
 /* Sidebar section
@@ -222,17 +206,17 @@ background-color: $brand-color;
 .sideright {
 background-color: $bkwt;
 margin: $ten;
-border-radius: $-five;
-padding:  $twy;
-font-size: $onefive;
-width: $twosty;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%;
+width: 260px;
 float: $rt;
 }
 
 .imagesidebar {
   width: $hWidth;
   float: $rt;
-  border-radius: $-five;
+  border-radius: 5px;
   margin-left: $ten; margin-right: $ten;
   margin-top: $zero; margin-bottom: $ten;
   clear: $rt;
