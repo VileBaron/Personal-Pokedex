@@ -58,7 +58,7 @@ function pikachuDoc() {
 
     }
   }
-  xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/25/", true);
+  xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/25.json", true);
   console.log(xhttp);
   xhttp.send();
 }
@@ -72,7 +72,7 @@ function loadPokemon() {
       console.log(this.responseText);
     }yorvi
     };
-    xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/25/", true);
+    xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/25.json", true);
     xhttp.send();
   }
 
@@ -107,7 +107,7 @@ function loadPokemon() {
 
       }
     }
-    xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
+    xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/133.json", true);
     console.log(xhttp);
     xhttp.send();
   }
@@ -121,7 +121,7 @@ function loadPokemon() {
         console.log(this.responseText);
       }
       };
-      xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
+      xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/133.json", true);
       xhttp.send();
     }
 
@@ -155,7 +155,7 @@ function loadPokemon() {
 
         }
       }
-      xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/150/", true);
+      xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/150.json", true);
       console.log(xhttp);
       xhttp.send();
     }
@@ -169,7 +169,7 @@ function loadPokemon() {
           console.log(this.responseText);
         }
         };
-        xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
+        xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/150.json", true);
         xhttp.send();
       }
 
@@ -203,7 +203,7 @@ function loadPokemon() {
 
           }
         }
-        xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/4/", true);
+        xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
         console.log(xhttp);
         xhttp.send();
       }
@@ -217,6 +217,6 @@ function loadPokemon() {
             console.log(this.responseText);
           }
           };
-          xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
+          xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
           xhttp.send();
         }
