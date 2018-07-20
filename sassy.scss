@@ -25,6 +25,12 @@ $hWidth: 300px;
 $ease: ease-in-out;
 $red: #990000;
 $maroon: #211510;
+$blood: #990000;
+$lime: #8db600;
+$scarlet: #801818;
+$offwt: #b2beb5;
+$bkwt: #e5e4d7;
+$pt: #d5c8af;
 $ten: 10px;
 $twy: 20px;
 $thi: 30px;
@@ -95,7 +101,7 @@ body {
 ================================= */
 
 img {
-  width: $sixtn0;
+  width: $sixtn;
 }
 
 
@@ -122,13 +128,13 @@ h2 {
 h3 {
   font-family: $font;
   font-size: $twotwo;
-  color: $blood;
+  color: $red;
   padding: $twelve $zero $four;
 }
 h4 {
   font-family: $font;
   font-size: $ateteen;
-  color: $lime;
+  color: #211510;
   padding: $twfv $zero $four;
 }
 
@@ -169,7 +175,7 @@ p2 {
 /* Button
 ================================= */
 button {
-font-family: : $font;
+font-family: $font;
 background-color: $brand-color;
  color: $offwt;
  padding: $ten $ten;
@@ -196,8 +202,8 @@ background-color: $brand-color;
 
 
 .container-grid img {
-  width: $stanWiHi
-  height: $stanWiHi
+  width: $stanWiHi;
+  height: $stanWiHi;
 }
 
 

@@ -1,51 +1,166 @@
-/*
-Error: Invalid CSS after "font-family: ": expected expression (e.g. 1px, bold), was ": $font;"
-        on line 172 of sassy.scss
+/* Body
+================================= */
+body {
+  background-color: #1b1b1b; }
 
-167: }
-168:
-169: /* Button
-170: ================================= *\/
-171: button {
-172: font-family: : $font;
-173: background-color: $brand-color;
-174:  color: $offwt;
-175:  padding: $ten $ten;
-176:  text-align: $center;
-177:  display: $run;
+.header {
+  background-color: #1b1b1b;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; }
 
-Backtrace:
-sassy.scss:172
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:724:in `assert_expr'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:68:in `parse'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:988:in `value!'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1254:in `rethrow'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:809:in `try_declaration'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:686:in `block_contents'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
-/Users/josephworman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/sass:13:in `<top (required)>'
-/Users/josephworman/.rbenv/versions/2.5.1/bin/sass:23:in `load'
-/Users/josephworman/.rbenv/versions/2.5.1/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"font-family: \": expected expression (e.g. 1px, bold), was \": $font;\"\A         on line 172 of sassy.scss\A \A 167: }\A 168: \A 169: /* Button\A 170: ================================= */\A 171: button {\A 172: font-family: : $font;\A 173: background-color: $brand-color;\A 174:  color: $offwt;\A 175:  padding: $ten $ten;\A 176:  text-align: $center;\A 177:  display: $run;"; }
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none; }
+
+/* Title
+================================= */
+.main-title {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  color: #F9F1E9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+  transform: translate3d(-50%, -50%, 0px); }
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em; }
+
+.main-title .thin {
+  font-weight: 200; }
+
+/* Images
+================================= */
+img {
+  width: 16px; }
+
+.container-grid img {
+  width: 120px;
+  height: 120px; }
+
+/* Fonts
+================================= */
+h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 100px;
+  color: #f8b700; }
+
+h2 {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  color: #f8b700; }
+
+h3 {
+  font-family: "Acme", sans-serif;
+  font-size: 22px;
+  color: #990000;
+  padding: 12px 0px 4px; }
+
+h4 {
+  font-family: "Acme", sans-serif;
+  font-size: 18px;
+  color: #211510;
+  padding: 25px 0px 4px; }
+
+h5 {
+  font-family: "Acme", sans-serif;
+  font-size: 25px;
+  color: #f8b700;
+  padding: 30px 0px 4px; }
+
+h6 {
+  font-family: "Acme", sans-serif;
+  font-size: 25px;
+  color: #f8b700; }
+
+p {
+  font-family: arial;
+  font-size: 20px;
+  color: #d5c8af;
+  line-height: 20px; }
+
+p1 {
+  font-family: arial;
+  font-size: 20px;
+  color: #b2beb5;
+  line-height: 20px; }
+
+p2 {
+  font-family: arial;
+  font-size: 20px;
+  color: #801818;
+  line-height: 20px; }
+
+/* Button
+================================= */
+button {
+  font-family: "Acme", sans-serif;
+  background-color: #f8b700;
+  color: #b2beb5;
+  padding: 10px 10px;
+  text-align: center;
+  display: run-in;
+  font-size: 16px; }
+
+/* Borders
+================================= */
+.container-grid {
+  padding: 0px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b1b1b; }
+
+.container-grid a {
+  display: flex;
+  flex-wrap: nowrap; }
+
+.container-grid img {
+  width: 120px;
+  height: 120px; }
+
+.container-grid div {
+  width: 220px;
+  padding: zero 10px zero 20px;
+  background-color: #211510; }
+
+.container-grid a:hover div {
+  background-color: #990000; }
+
+/* Sidebar section
+================================= */
+.sideright {
+  background-color: #e5e4d7;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 105;
+  width: 260px;
+  float: right; }
+
+.imagesidebar {
+  width: 300px;
+  float: right;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  clear: right;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; }
+
+.imagesidebar:hover {
+  opacity: 0.4; }
+
+/*# sourceMappingURL=layout.css.map */
