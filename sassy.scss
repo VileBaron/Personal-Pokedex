@@ -1,0 +1,246 @@
+$main-bg-color: #1b1b1b;
+$brand-color: #f8b700;
+$main-fit: 100px;
+$half: 50%;
+$zero: 0px;
+$-half: -50%;
+$font: 'Acme', sans-serif;
+$center: center;
+$flex: flex;
+$-wrap: nowrap;
+$none: none;
+$wrap: wrap;
+$col: column
+$rel: relative;
+$ash: #F9F1E9;
+$rt: right;
+$Aft: arial;
+$Ucase: uppercase;
+$stanWiHi: 120px;
+$lOpacity: 1.0;
+$mOpacity: 0.4;
+$HOpacity: 0.5s;
+$mWidth: 220px;
+$hWidth: 300px;
+$ease: ease-in-out;
+$red: #990000
+$maroon: #211510
+$1px: 10px;
+$2px: 20px;
+$3px: 30px;
+$16: 16px;
+$25: 25px;
+$4: 4px;
+$18: 18px;
+$12: 12px;
+$22: 22px;
+$22px: 22px;
+$run: run-in;
+$200: 200;
+$160: 160px;
+$-5: 5px;
+$260: 260px;
+$105: 105;
+$blood: #990000;
+$lime: #8db600;
+$scarlet: #801818;
+$offwt: #b2beb5;
+$bkwt: #e5e4d7;
+$pt: #d5c8af;
+$4em: 4.2em;
+$1em: 0.1em;
+
+
+/* Body
+================================= */
+body {
+  background-color: $main-bg-color;
+}
+
+.header {
+  background-color: $main-bg-color;
+  height: $main-fit;
+  display: $flex;
+  flex-direction: $col;
+  flex-wrap: $-wrap;
+  align-items: $center;
+  justify-content: $center;
+}
+
+* {
+  margin: $zero;
+  padding: $zero;
+  text-decoration: $none;
+}
+
+/* Title
+================================= */
+
+.main-title {
+   position: $rel;
+   margin: $zero;
+   padding: $zero;
+   color: $ash;
+   text-align: $center;
+   top: $half;
+   left: $half;
+   -webkit-transform: translate3d($-half, $-half, $zero);
+   transform: translate3d($-half, $-half, $zero);
+}
+
+.demo .main-title {
+   text-transform: $Ucase;
+   font-size: $4em;
+   letter-spacing: $1em;
+}
+
+.main-title .thin {
+   font-weight: $200;
+}
+
+/* Images
+================================= */
+
+img {
+  width: $160;
+}
+
+
+.container-grid img {
+  width: $stanWiHi;
+  height: $stanWiHi;
+}
+
+/* Fonts
+================================= */
+
+h1 {
+    font-family: $font;
+    font-size: $main-fit;
+    color: $brand-color;
+  }
+
+h2 {
+  font-family: $font;
+  font-size: $3px;
+  color: $brand-color;
+}
+
+h3 {
+  font-family: $font;
+  font-size: $22;
+  color: $blood;
+  padding: $12 $zero $4;
+}
+h4 {
+  font-family: $font;
+  font-size: $18;
+  color: $lime;
+  padding: $25 $zero $4;
+}
+
+h5 {
+  font-family: $font;
+  font-size: $25;
+  color: $brand-color;
+  padding: $3px $zero $4;
+}
+
+h6 {
+  font-family: $font;
+  font-size: $25;
+  color: $brand-color;
+}
+
+p {
+  font-family: $Aft
+  font-size: $2px;
+  color: $pt;
+  line-height: $2px;
+}
+
+p1 {
+  font-family: $Aft
+  font-size: $2px;
+  color: $offwt;
+  line-height: $2px;
+}
+
+p2 {
+  font-family: $Aft
+  font-size: $2px;
+  color: $scarlet;
+  line-height: $2px;
+}
+
+/* Button
+================================= */
+button {
+font-family: : $font;
+background-color: $brand-color;
+ color: $offwt;
+ padding: $1px $1px;
+ text-align: $center;
+ display: $run;
+ font-size: $16;
+}
+
+/* Borders
+================================= */
+.container-grid {
+  padding: $zero;
+  width: $main-fit;
+  display: $flex;
+  flex-wrap: $wrap;
+  justify-content: $center;
+  background-color: $main-bg-color;
+}
+
+.container-grid a {
+  display: $flex;
+  flex-wrap: $-wrap
+}
+
+
+.container-grid img {
+  width: $stanWiHi
+  height: $stanWiHi
+}
+
+
+.container-grid div {
+  width: $mWidth;
+  padding: zero $1px zero $2px;
+  background-color: $maroon;
+}
+
+.container-grid a:hover div {
+  background-color: $red;
+}
+
+/* Sidebar section
+================================= */
+.sideright {
+background-color: $bkwt;
+margin: $1px;
+border-radius: $-5px;
+padding: $2px;
+font-size: $105%;
+width: $260;
+float: $rt;
+}
+
+.imagesidebar {
+  width: $hWidth;
+  float: $rt;
+  border-radius: $-5px;
+  margin-left: $1px; margin-right: $1px;
+  margin-top: $zero; margin-bottom: $1px;
+  clear: $rt;
+  opacity: $lOpacity;
+  transition: opacity $HOpacity $ease;
+}
+
+.imagesidebar:hover {
+  opacity: $mOpacity;
+}

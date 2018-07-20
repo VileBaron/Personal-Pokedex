@@ -34,7 +34,7 @@ class Pokemon {
 let Joseph = new Trainer();
 
 
-function loadDoc() {
+function pikachuDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -83,7 +83,7 @@ function loadPokemon() {
 
 
 
-  function startDoc() {
+  function eeveeDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -94,7 +94,7 @@ function loadPokemon() {
           this.hp = myObj.stats[5].base_stat,
           this.attack = myObj.stats[4].base_stat,
           this.defense = myObj.stats[1].base_stat,
-          this.ability = myObj.abilities[0]
+          this.ability = myObj.abilities[0].ability.name,
         );
         console.log(eevee);
 
@@ -102,7 +102,7 @@ function loadPokemon() {
         document.getElementById("eevee-hp").innerHTML = 'My health is at ' + eevee.hp;
         document.getElementById("eevee-attack").innerHTML = 'My attack is ' + eevee.attack;
         document.getElementById("eevee-defense").innerHTML = 'My defense is ' + eevee.defense;
-        document.getElementById("eevee-ability").innerHTML = 'My avility is ' + eevee.ability;
+        document.getElementById("eevee-ability").innerHTML = 'My ability is ' + eevee.abilities;
 
 
       }
@@ -131,7 +131,7 @@ function loadPokemon() {
 
 
 
-    function openDoc() {
+    function mewDoc() {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -142,7 +142,7 @@ function loadPokemon() {
             this.hp = myObj.stats[5].base_stat,
             this.attack = myObj.stats[4].base_stat,
             this.defense = myObj.stats[1].base_stat,
-            this.ability = myObj.abilities[0]
+            this.ability = myObj.abilities[0].ability.name,
           );
           console.log(mewtwo);
 
@@ -150,7 +150,7 @@ function loadPokemon() {
           document.getElementById("mewtwo-hp").innerHTML = 'My health is at ' + mewtwo.hp;
           document.getElementById("mewtwo-attack").innerHTML = 'My attack is ' + mewtwo.attack;
           document.getElementById("mewtwo-defense").innerHTML = 'My defense is ' + mewtwo.defense;
-          document.getElementById("mewtwo-ability").innerHTML = 'My avility is ' + mewtwo.ability;
+          document.getElementById("mewtwo-ability").innerHTML = 'My ability is ' + mewtwo.abilities;
 
 
         }
@@ -160,7 +160,7 @@ function loadPokemon() {
       xhttp.send();
     }
 
-    function loadPokemon() {
+    function mewPokemon() {
       var xhttp = new XMLHttpRequest();
       console.log(xhttp); {
         if (this.readyState == 4 && this.status == 200) {
@@ -172,3 +172,51 @@ function loadPokemon() {
         xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
         xhttp.send();
       }
+
+      /* Charmander
+      ================================= */
+
+
+
+
+      function charmDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+
+            var myObj = JSON.parse(this.responseText);
+            var charmander = new Pokemon (
+              this.name = myObj.name,
+              this.hp = myObj.stats[5].base_stat,
+              this.attack = myObj.stats[4].base_stat,
+              this.defense = myObj.stats[1].base_stat,
+              this.ability = myObj.abilities[0].ability.name,
+            );
+            console.log(charmander);
+
+            document.getElementById("charmander-name").innerHTML = 'My name is ' + charmander.name;
+            document.getElementById("charmander-hp").innerHTML = 'My health is at ' + charmander.hp;
+            document.getElementById("charmander-attack").innerHTML = 'My attack is ' + charmander.attack;
+            document.getElementById("charmander-defense").innerHTML = 'My defense is ' + charmander.defense;
+            document.getElementById("charmander-ability").innerHTML = 'My ability is ' + charmander.abilities;
+
+
+          }
+        }
+        xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/4/", true);
+        console.log(xhttp);
+        xhttp.send();
+      }
+
+      function loadPokemon() {
+        var xhttp = new XMLHttpRequest();
+        console.log(xhttp); {
+          if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            document.getElementById('info').src = myObj.sprites.front_default;
+            console.log(this.responseText);
+          }
+          };
+          xhttp.open("GET","https://pokeapi.co/api/v2/pokemon/133/", true);
+          xhttp.send();
+        }
