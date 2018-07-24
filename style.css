@@ -30,7 +30,7 @@ body {
   -webkit-transform: translate3d(-50%, -50%, 0px);
   transform: translate3d(-50%, -50%, 0); }
 
-.demo .main-title {
+.main-title {
   text-transform: uppercase;
   font-size: 4.2em;
   letter-spacing: 0.1em; }
