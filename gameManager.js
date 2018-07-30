@@ -17,6 +17,7 @@ class Trainer {
  }
 }
 
+let Joseph = new Trainer();
 
 
 /* Pikachu
@@ -31,7 +32,7 @@ class Pokemon {
   }
 }
 
-let Joseph = new Trainer();
+
 
 
 function pikachuDoc() {
@@ -46,6 +47,7 @@ function pikachuDoc() {
         this.attack = myObj.stats[4].base_stat,
         this.defense = myObj.stats[1].base_stat,
         this.ability = myObj.abilities[0].ability.name,
+        this.pokemon.push
       );
       console.log(pikachu);
 
