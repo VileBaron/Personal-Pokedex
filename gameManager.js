@@ -16,6 +16,7 @@ class Trainer {
    }
  }
 }
+allPokemon = [] 
 
 let Joseph = new Trainer();
 
@@ -42,13 +43,13 @@ function pikachuDoc() {
 
       var myObj = JSON.parse(this.responseText);
       pikachu = new Pokemon (
-        this.name = myObj.name,
-        this.hp = myObj.stats[5].base_stat,
-        this.attack = myObj.stats[4].base_stat,
-        this.defense = myObj.stats[1].base_stat,
-        this.ability = myObj.abilities[0].ability.name,
-        this.pokemon.push
+        myObj.name,
+        myObj.stats[5].base_stat,
+        myObj.stats[4].base_stat,
+        myObj.stats[1].base_stat,
+        myObj.abilities[0].ability.name,
       );
+      allPokemon.push(pikachu)
       console.log(pikachu);
 
       document.getElementById("pikachu-name").innerHTML = 'My name is ' + pikachu.name;
@@ -60,7 +61,7 @@ function pikachuDoc() {
 
     }
   }
-  xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/25.json", true);
+  xhttp.open("GET","25", true);
   console.log(xhttp);
   xhttp.send();
 }
@@ -74,7 +75,7 @@ function loadPokemon() {
       console.log(this.responseText);
     }yorvi
     };
-    xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/25.json", true);
+    xhttp.open("GET","25", true);
     xhttp.send();
   }
 
@@ -92,12 +93,13 @@ function loadPokemon() {
 
         var myObj = JSON.parse(this.responseText);
         var eevee = new Pokemon (
-          this.name = myObj.name,
-          this.hp = myObj.stats[5].base_stat,
-          this.attack = myObj.stats[4].base_stat,
-          this.defense = myObj.stats[1].base_stat,
-          this.ability = myObj.abilities[0].ability.name,
+          myObj.name,
+          myObj.stats[5].base_stat,
+          myObj.stats[4].base_stat,
+          myObj.stats[1].base_stat,
+          myObj.abilities[0].ability.name,
         );
+        allPokemon.push(eevee)
         console.log(eevee);
 
         document.getElementById("eevee-name").innerHTML = 'My name is ' + eevee.name;
@@ -109,7 +111,7 @@ function loadPokemon() {
 
       }
     }
-    xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/133.json", true);
+    xhttp.open("GET","133", true);
     console.log(xhttp);
     xhttp.send();
   }
@@ -123,7 +125,7 @@ function loadPokemon() {
         console.log(this.responseText);
       }
       };
-      xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/133.json", true);
+      xhttp.open("GET","133", true);
       xhttp.send();
     }
 
@@ -140,12 +142,13 @@ function loadPokemon() {
 
           var myObj = JSON.parse(this.responseText);
           var mewtwo = new Pokemon (
-            this.name = myObj.name,
-            this.hp = myObj.stats[5].base_stat,
-            this.attack = myObj.stats[4].base_stat,
-            this.defense = myObj.stats[1].base_stat,
-            this.ability = myObj.abilities[0].ability.name,
+            myObj.name,
+            myObj.stats[5].base_stat,
+            myObj.stats[4].base_stat,
+            myObj.stats[1].base_stat,
+            myObj.abilities[0].ability.name,
           );
+          allPokemon.push(mewtwo)
           console.log(mewtwo);
 
           document.getElementById("mewtwo-name").innerHTML = 'My name is ' + mewtwo.name;
@@ -157,7 +160,7 @@ function loadPokemon() {
 
         }
       }
-      xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/150.json", true);
+      xhttp.open("GET","150", true);
       console.log(xhttp);
       xhttp.send();
     }
@@ -171,7 +174,7 @@ function loadPokemon() {
           console.log(this.responseText);
         }
         };
-        xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/150.json", true);
+        xhttp.open("GET","150", true);
         xhttp.send();
       }
 
@@ -188,12 +191,13 @@ function loadPokemon() {
 
             var myObj = JSON.parse(this.responseText);
             var charmander = new Pokemon (
-              this.name = myObj.name,
-              this.hp = myObj.stats[5].base_stat,
-              this.attack = myObj.stats[4].base_stat,
-              this.defense = myObj.stats[1].base_stat,
-              this.ability = myObj.abilities[0].ability.name,
+              myObj.name,
+              myObj.stats[5].base_stat,
+              myObj.stats[4].base_stat,
+              myObj.stats[1].base_stat,
+              myObj.abilities[0].ability.name,
             );
+            allPokemon.push(charmander)
             console.log(charmander);
 
             document.getElementById("charmander-name").innerHTML = 'My name is ' + charmander.name;
@@ -205,7 +209,7 @@ function loadPokemon() {
 
           }
         }
-        xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
+        xhttp.open("GET","4", true);
         console.log(xhttp);
         xhttp.send();
       }
@@ -219,6 +223,6 @@ function loadPokemon() {
             console.log(this.responseText);
           }
           };
-          xhttp.open("GET","https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
+          xhttp.open("GET","4", true);
           xhttp.send();
         }
